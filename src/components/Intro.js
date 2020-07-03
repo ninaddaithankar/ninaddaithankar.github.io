@@ -15,11 +15,12 @@ const Intro = () => {
 						A student
 						<br /> currently{' '}
 						<span className='highlight-text'>
-							exploring<span className='comma'> </span>
-							<br />& embracing <br />
-							the artistry
+							studying<span className='comma'> </span>
+							<br />
+							the science
+							<br /> behind the art
 						</span>
-						<br /> in deep learning.
+						<br /> of deep learning.
 						<br />{' '}
 					</div>
 					<div className='intro-bottom-link'>

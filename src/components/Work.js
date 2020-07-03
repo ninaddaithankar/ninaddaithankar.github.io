@@ -4,7 +4,7 @@ import time1 from '../assets/images/time-1.png';
 import time2 from '../assets/images/time-2.png';
 import time3 from '../assets/images/time-32.png';
 import unwrapp from '../assets/images/unwrapp.png';
-import portfolio from '../assets/images/portfolio1.png';
+import portfolio from '../assets/images/portfolio-new.png';
 
 const Work = () => {
 	const works = [
