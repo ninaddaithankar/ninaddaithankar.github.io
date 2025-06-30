@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 interface Publication {
   id: string
@@ -12,7 +12,6 @@ interface Publication {
 }
 
 const Publications: React.FC = () => {
-  const [expandedBib, setExpandedBib] = useState<string | null>(null)
 
   const publications: Publication[] = [
     {
@@ -26,10 +25,6 @@ const Publications: React.FC = () => {
       bibtex: ``
     }
   ]
-
-  const toggleBib = (id: string) => {
-    setExpandedBib(expandedBib === id ? null : id)
-  }
 
   const groupedPublications = publications.reduce((acc, pub) => {
     if (!acc[pub.year]) {
@@ -90,12 +85,6 @@ const Publications: React.FC = () => {
                           </a> */}
                         {/* )} */}
                       </div>
-                      
-                      {expandedBib === pub.id && (
-                        <div className="bibtex">
-                          {pub.bibtex}
-                        </div>
-                      )}
                     </div>
                   </div>
                 ))}
