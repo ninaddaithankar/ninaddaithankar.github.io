@@ -1,0 +1,367 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  color: #1f2937;
+  width: 50vw;
+  margin: 0 auto;
+  min-width: 20rem;
+  max-width: 60rem;
+}
+
+/* Container */
+.container {
+  max-width: 75rem; /* 1200px equivalent */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 0.5rem; /* 8px equivalent */
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 48rem) { /* 768px equivalent */
+  .header {
+    flex-direction: row;
+  }
+}
+
+.profile-image {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 1rem 1.5rem 1.7rem rgba(8, 8, 8, 0.1);
+  flex-shrink: 0;
+  min-width: 8rem; /* Prevent too small on mobile */
+  min-height: 8rem;
+}
+
+.profile-info {
+  flex: 1;
+  padding: 2rem 3rem;
+}
+
+.name {
+  font-size: clamp(2rem, 4vw, 2.5rem); /* Responsive font size */
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.email {
+  color: #7b8392;
+  margin: 1rem 0;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.875rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #307Df6;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: #2563eb;
+}
+
+.social-link svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Section styles */
+.section-title {
+  font-size: clamp(1.3rem, 3vw, 1.6rem); /* Responsive font size */
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  height: 0.2rem; /* 2px equivalent */
+  width: 20rem;
+  background: linear-gradient(to right, #3d30f6, transparent);
+  margin-bottom: 1.75rem;
+}
+
+/* Text styles */
+.text-content {
+  color: #374151;
+  line-height: 1.7;
+  font-size: clamp(1rem, 2.5vw, 1.1rem); /* Responsive font size */
+}
+
+.text-content a {
+  color: #307Df6;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.text-content a:hover {
+  color: #2563eb;
+}
+
+/* Research section */
+.research-item {
+  margin-bottom: 1.5rem;
+}
+
+.research-item strong {
+  color: #111827;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Publications */
+.publication {
+  border-left: 0.25rem solid rgba(48, 125, 246, 0.2); /* 4px equivalent */
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.publication-title {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.publication-authors {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-size: clamp(0.8rem, 2vw, 0.875rem);
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.publication-badge {
+  background-color: rgba(48, 125, 246, 0.75);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem; /* 4px equivalent */
+  font-size: 0.75rem;
+  font-weight: 500;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1); /* 1px 2px equivalent */
+}
+
+.publication-link {
+  color: #307Df6;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.publication-link:hover {
+  color: #2563eb;
+}
+
+.bibtex {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.25rem; /* 4px equivalent */
+  margin-top: 0.75rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.75rem;
+  color: #374151;
+  white-space: pre-wrap;
+  overflow-x: auto; /* Handle long lines */
+}
+
+/* Education and Experience */
+.education-item,
+.experience-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.education-content,
+.experience-content {
+  flex: 1;
+}
+
+.education-title,
+.experience-title {
+  font-weight: 600;
+  color: #111827;
+  font-size: clamp(1rem, 2.5vw, 1.125rem); /* Responsive font size */
+  margin-bottom: 0.5rem;
+}
+
+.education-period,
+.experience-period {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-size: clamp(0.8rem, 2vw, 0.875rem);
+}
+
+.education-details,
+.experience-details {
+  color: #374151;
+  font-size: clamp(0.8rem, 2vw, 0.875rem);
+}
+
+.institution-logo {
+  width: 4rem; /* 64px equivalent */
+  height: 4rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Awards */
+.awards-list {
+  list-style: none;
+}
+
+.awards-list li {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.awards-list strong {
+  color: #111827;
+}
+
+/* Misc */
+.misc-list {
+  list-style: none;
+}
+
+.misc-list li {
+  margin-bottom: 0.75rem;
+  color: #374151;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #6b7280;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+.footer .last-updated {
+  font-size: 0.875rem;
+}
+
+/* Responsive design */
+@media (max-width: 48rem) { /* 768px equivalent */
+  body {
+    width: 90vw; /* Wider on mobile */
+    min-width: 18rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .name {
+    font-size: 1.75rem;
+  }
+  
+  .education-item,
+  .experience-item {
+    flex-direction: column;
+  }
+  
+  .institution-logo {
+    align-self: flex-start;
+  }
+  
+  .profile-image {
+    width: 15rem;
+    height: 15rem;
+    min-width: 6rem;
+    min-height: 6rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 30rem) { /* 480px equivalent */
+  body {
+    width: 95vw;
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 0.75rem;
+  }
+  
+  .card {
+    padding: 1rem;
+  }
+  
+  .profile-image {
+    width: 12rem;
+    height: 12rem;
+    min-width: 5rem;
+    min-height: 5rem;
+  }
+  
+  .social-links {
+    gap: 1rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 80rem) { /* 1280px equivalent */
+  body {
+    width: 60vw;
+  }
+  
+  .container {
+    max-width: 90rem;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 120rem) { /* 1920px equivalent */
+  body {
+    width: 50vw;
+  }
+}
