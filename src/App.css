@@ -41,7 +41,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 8vh;
+  margin-top: 14vh;
   margin-bottom: 3rem;
 }
 
@@ -84,6 +84,7 @@ a {
   transition: color 0.2s;
   font-size: 2rem;
 }
+
 .hero-social-icon:hover {
   color: #3d30f6;
 }
@@ -127,12 +128,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-}
-
-@media (min-width: 48rem) { /* 768px equivalent */
-  .header {
-    flex-direction: row;
-  }
 }
 
 .profile-image {
@@ -373,121 +368,113 @@ a {
 }
 
 .footer p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .footer .last-updated {
   font-size: 0.875rem;
 }
 
-/* ===================== Responsive Design ===================== */
-@media (max-width: 600px) {
-  .hero-title {
+/* ===================== Device-Specific Responsive Design ===================== */
+
+/* iPad Portrait & Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    min-width: unset;
+  }
+  .container {
+    max-width: 50rem;
+    padding: 0.5rem;
+  }
+
+  .hero-header {
+    margin-top: 20vh;
+  }
+
+  .hero-title, .section-title {
     font-size: 2rem;
   }
-  .hero-profile-image {
-    width: 5.5rem;
-    height: 5.5rem;
-  }
-  .section-title {
-    font-size: 1.3rem;
+  .profile-image, .hero-profile-image {
+    width: 8rem;
+    height: 8rem;
   }
 }
 
-/* Responsive design */
-@media (max-width: 48rem) { /* 768px equivalent */
-  body {
-    width: 90vw; /* Wider on mobile */
-    min-width: 18rem;
+
+/* iPhone 12/13/14 Pro, 430px and below */
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 12px;
   }
-  
+
   .container {
-    padding: 1rem;
+    width: 85vw;
+    padding: 0;
+  }
+
+  .hero-header {
+    padding: 0;
   }
   
-  .card {
-    padding: 1.5rem;
+  .hero-about {
+    padding: 0;
+  }
+
+  .hero-title{
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .profile-image, .hero-profile-image {
+    width: 6rem;
+    height: 6rem;
+  }
+  .section-divider {
+    width: 8rem;
+  }
+
+  .fa-brands, .fa-regular {
+    font-size: 1.5rem;
+  }
+
+  .footer p {
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
   }
   
-  .name {
-    font-size: 1.75rem;
-  }
-  
-  .education-item,
-  .experience-item {
-    flex-direction: column;
-  }
-  
-  .institution-logo {
-    align-self: flex-start;
-  }
-  
-  .profile-image {
-    width: 15rem;
-    height: 15rem;
-    min-width: 6rem;
-    min-height: 6rem;
+  .footer .last-updated {
+    font-size: 0.8rem;
   }
 }
 
-/* Extra small screens */
-@media (max-width: 30rem) { /* 480px equivalent */
+/* iPhone SE/5/6/7/8, 375px and below */
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
   body {
-    width: 95vw;
+    font-size: 0.9rem;
+  }
+  .container {
+    width: 85vw;
+    padding: 0.1rem;
+  }
+
+  .section-title {
     font-size: 1rem;
   }
-  
-  .container {
-    padding: 0.75rem;
+  .profile-image, .hero-profile-image {
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  
-  .card {
-    padding: 1rem;
-  }
-  
-  .profile-image {
-    width: 12rem;
-    height: 12rem;
-    min-width: 5rem;
-    min-height: 5rem;
-  }
-  
-  .social-links {
-    gap: 1rem;
+  .section-divider {
+    width: 5rem;
   }
 }
 
-/* Large screens */
-@media (min-width: 80rem) { /* 1280px equivalent */
-  body {
-    width: 60vw;
-  }
-  
-  .container {
-    max-width: 90rem;
-  }
-}
-
-/* Extra large screens */
-@media (min-width: 120rem) { /* 1920px equivalent */
-  body {
-    width: 50vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-profile-image {
-    width: 5.5rem;
-    height: 5.5rem;
-  }
-  .hero-about {
-    font-size: 1.05rem;
-    padding: 0 0.5rem;
-  }
-  .hero-social-row {
-    gap: 1.2rem;
-  }
-  .hero-actions {
-    gap: 0.7rem;
-  }
-}
