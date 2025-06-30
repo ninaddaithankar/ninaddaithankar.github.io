@@ -7,39 +7,29 @@ interface EducationItem {
   details: string[]
   logo: string
   logoAlt: string
+  advisor?: string
+  advisorUrl?: string
 }
 
 const Education: React.FC = () => {
   const educationItems: EducationItem[] = [
     {
       institution: 'University of Illinois Urbana-Champaign',
-      period: '2024.9 - 2026.6 (Expected)',
-      degree: 'M.S. in Computer Science',
-      details: ['Advisor: Heng Ji'],
+      period: '2024 - ongoing',
+      degree: 'Masters - Computer Science, GPA - 3.91/4',
+      details: ['Coursework: Advances in Cognitive Science, Deep Learning for Computer Vision, Natural Language Processing, Deep Generative Models, Advanced Information Retrieval, Computational Photography'],
       logo: '/assets/uiuc.png',
-      logoAlt: 'UIUC Logo'
+      logoAlt: 'UIUC Logo',
+      advisor: 'Prof. Heng Ji',
+      advisorUrl: 'https://blender.cs.illinois.edu/hengji.html'
     },
     {
-      institution: 'University of California Davis',
-      period: '2023.3 - 2024.6',
-      degree: 'Exchange student in Computer Science Department',
-      details: [
-        'Relevant Courses: Advanced Artificial Intelligence (graduate-level course, A+)',
-        'Course Link: https://www.ifmlab.org/courses.html'
-      ],
-      logo: '/assets/ucd.png',
-      logoAlt: 'UCD Logo'
-    },
-    {
-      institution: 'B.E., Renmin University of China',
-      period: '2020 - 2024',
-      degree: 'Gaoling School of Artificial Intelligence',
-      details: [
-        'Advisor: Prof. Wayne Xin Zhao',
-        'Cumulative GPA: 3.77/4.0 (Rank: 1/23); Junior Year GPA: 3.92/4.0'
-      ],
-      logo: '/assets/ruc.png',
-      logoAlt: 'RUC Logo'
+      institution: 'Savitribai Phule Pune University',
+      period: '2017 - 2021',
+      degree: 'Bachelors - Computer Science, GPA - 9.1/10',
+      details: ['Coursework: Data Structures, Advanced Algorithms, Object Oriented Programming, Machine Learning, Web Development, Database Systems, High Performance Computing, Software Design'],
+      logo: '/assets/sppu.png',
+      logoAlt: 'SPPU Logo'
     }
   ]
 
@@ -56,64 +46,19 @@ const Education: React.FC = () => {
                 {item.institution}
               </h3>
               <p className="education-period">{item.period}</p>
-              <p className="education-details">
-                {item.degree.includes('http') ? (
-                  <>
-                    Exchange student in{' '}
-                    <a 
-                      href="https://cs.ucdavis.edu/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      Computer Science Department
-                    </a>
-                  </>
-                ) : (
-                  item.degree
-                )}
-              </p>
-              {item.details.map((detail, detailIndex) => (
-                <p key={detailIndex} className="education-details">
-                  {detail.includes('http') ? (
-                    <>
-                      Relevant Courses:{' '}
-                      <a 
-                        href="https://www.ifmlab.org/courses.html" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        Advanced Artificial Intelligence
-                      </a>{' '}
-                      (graduate-level course, A+)
-                    </>
-                  ) : detail.includes('Advisor') ? (
-                    <>
-                      <strong>Advisor</strong>: {detail.includes('Wayne') ? (
-                        <a 
-                          href="https://scholar.google.com/citations?user=JNhNacoAAAAJ" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Prof. Wayne Xin Zhao
-                        </a>
-                      ) : (
-                        detail.replace('Advisor: ', '')
-                      )}
-                    </>
-                  ) : detail.includes('Gaoling') ? (
-                    <>
-                      <a 
-                        href="http://ai.ruc.edu.cn/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        Gaoling School of Artificial Intelligence
-                      </a>
-                    </>
+              <p className="education-details">{item.degree}</p>
+              {item.advisor && item.advisor.trim() !== "" && (
+                <p className="education-extra-details">
+                  Advisor:{' '}
+                  {item.advisorUrl ? (
+                    <a href={item.advisorUrl} target="_blank" rel="noopener noreferrer">{item.advisor}</a>
                   ) : (
-                    detail
+                    item.advisor
                   )}
                 </p>
+              )}
+              {item.details.map((detail, detailIndex) => (
+                <p key={detailIndex} className="education-extra-details">{detail}</p>
               ))}
             </div>
             <img 

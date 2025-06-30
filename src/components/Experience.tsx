@@ -4,7 +4,7 @@ interface ExperienceItem {
   title: string
   institution: string
   period: string
-  advisor: string
+  advisor?: string
   advisorUrl?: string
   topic: string
   logo: string
@@ -14,24 +14,32 @@ interface ExperienceItem {
 const Experience: React.FC = () => {
   const experienceItems: ExperienceItem[] = [
     {
-      title: 'Visiting Undergraduate Student',
-      institution: 'University of Illinois Urbana-Champaign',
-      period: '10/2023 - 01/2024',
+      title: 'Summer Research Intern',
+      institution: 'Blender Lab - University of Illinois Urbana-Champaign',
+      period: '05/2025 - Present',
       advisor: 'Prof. Heng Ji',
       advisorUrl: 'https://blender.cs.illinois.edu/hengji.html',
-      topic: 'Knowledge Editing and the Ripple Effect behavior of LLMs',
+      topic: 'Temporal Difference Encoders',
       logo: '/assets/uiuc.png',
       logoAlt: 'UIUC Logo'
     },
     {
-      title: 'Research Intern',
-      institution: 'University of California Berkeley',
-      period: '05/2023 - 10/2023',
-      advisor: 'Prof. Jiantao Jiao and Banghua Zhu',
-      advisorUrl: 'https://people.eecs.berkeley.edu/~jiantao/',
-      topic: 'PlanBench: A Benchmark for Planning with Large Language Models',
-      logo: '/assets/ucb.png',
-      logoAlt: 'UCB Logo'
+      title: 'Graduate Student Researcher',
+      institution: 'Blender Lab - University of Illinois Urbana-Champaign',
+      period: '09/2025 - Present',
+      advisor: 'Prof. Heng Ji',
+      advisorUrl: 'https://blender.cs.illinois.edu/hengji.html',
+      topic: 'SSL - Visual Representation Learning',
+      logo: '/assets/uiuc.png',
+      logoAlt: 'UIUC Logo'
+    },
+    {
+      title: 'Software Engineer - Data Virtualization',
+      institution: 'eQ Technologic',
+      period: '08/2021 - 07/2024',
+      topic: 'SSL - Visual Representation Learning',
+      logo: '/assets/eq-logo.webp',
+      logoAlt: 'eQ Logo'
     }
   ]
 
@@ -45,46 +53,30 @@ const Experience: React.FC = () => {
           <div key={index} className="experience-item">
             <div className="experience-content">
               <h3 className="experience-title">
-                {item.title}, {item.institution}
+                {item.title}
               </h3>
+              <p className='experience-period'>{item.institution}</p>
               <p className="experience-period">{item.period}</p>
-              <p className="experience-details">
-                Advisor:{' '}
-                <a 
-                  href={item.advisorUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  {item.advisor}
-                </a>
-                {item.title === 'Research Intern' && (
-                  <>
-                    {' '}and{' '}
+              {item.advisor && item.advisor.trim() !== "" && (
+                <p className="education-extra-details">
+                  Advisor:{' '}
+                  {item.advisorUrl ? (
                     <a 
-                      href="https://people.eecs.berkeley.edu/~banghua/" 
+                      href={item.advisorUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
+                      style={{textDecoration: "none"}}
                     >
-                      Banghua Zhu
+                      {item.advisor}
                     </a>
-                  </>
-                )}
-                {item.title === 'Visiting Undergraduate Student' && (
-                  <>
-                    , and{' '}
-                    <a 
-                      href="https://zhangzx-uiuc.github.io/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      Zixuan Zhang
-                    </a>
-                  </>
-                )}
-              </p>
-              <p className="experience-details">
+                  ) : (
+                    item.advisor
+                  )}
+                </p>
+              )}
+              {/* <p className="experience-details">
                 Topic: {item.topic}
-              </p>
+              </p> */}
             </div>
             <img 
               src={item.logo} 

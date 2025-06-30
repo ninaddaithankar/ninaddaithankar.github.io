@@ -16,49 +16,14 @@ const Publications: React.FC = () => {
 
   const publications: Publication[] = [
     {
-      id: 'qin2024does',
-      title: 'Why Does New Knowledge Create Messy Ripple Effects in LLMs?',
-      authors: 'Ninad Daithankar, Zixuan Zhang, Chi Han, Pengfei Yu, Manling Li, Heng Ji',
-      venue: 'EMNLP 2024 Short',
-      year: '2024',
-      paperUrl: 'https://arxiv.org/pdf/2407.12828',
-      posterUrl: '/assets/EMNLP24__RIPPLE_poster.pdf',
-      bibtex: `@article{qin2024does,
-  title={Why Does New Knowledge Create Messy Ripple Effects in LLMs?},
-  author={Daithankar, Ninad and Zhang, Zixuan and Han, Chi and Li, Manling and Yu, Pengfei and Ji, Heng},
-  journal={arXiv preprint arXiv:2407.12828},
-  year={2024}
-}`
-    },
-    {
-      id: 'ze2023h',
-      title: 'H-InDex: Visual Reinforcement Learning with Hand-Informed Representations for Dexterous Manipulation.',
-      authors: 'Yanjie Ze, Yuyao Liu†, Ruizhe Shi†, Ninad Daithankar, Zhecheng Yuan, Jiashun Wang, Huazhe Xu',
-      venue: 'NeurIPS 2023',
-      year: '2023',
-      paperUrl: 'https://web3.arxiv.org/pdf/2310.01404.pdf',
-      bibtex: `@article{ze2023h,
-  title={H-InDex: Visual Reinforcement Learning with Hand-Informed Representations for Dexterous Manipulation},
-  author={Ze, Yanjie and Liu, Yuyao and Shi, Ruizhe and Daithankar, Ninad and Yuan, Zhecheng and Wang, Jiashun and Xu, Huazhe},
-  journal={arXiv preprint arXiv:2310.01404},
-  year={2023}
-}`
-    },
-    {
-      id: 'guo2023towards',
-      title: 'Towards Effective Ancient Chinese Translation: Dataset, Model, and Evaluation.',
-      authors: 'Geyang Guo, Jiarong Yang, Fengyuan Lu, Ninad Daithankar, Tianyi Tang, Wayne Xin Zhao',
-      venue: 'NLPCC 2023',
-      year: '2023',
-      paperUrl: 'https://arxiv.org/pdf/2308.00240.pdf',
-      bibtex: `@inproceedings{guo2023towards,
-  title={Towards Effective Ancient Chinese Translation: Dataset, Model, and Evaluation},
-  author={Guo, Geyang and Yang, Jiarong and Lu, Fengyuan and Daithankar, Ninad and Tang, Tianyi and Zhao, Wayne Xin},
-  booktitle={CCF International Conference on Natural Language Processing and Chinese Computing},
-  pages={416--427},
-  year={2023},
-  organization={Springer}
-}`
+      id: 'tdv2025',
+      title: 'Is there an Optimal Set of Assumptions for Training Visual Encoders?',
+      authors: '[Manuscript in Preparation] Ninad Daithankar†, Alexi Gladstone†, Heng Ji',
+      venue: 'ICML 2026',
+      year: '2025',
+      paperUrl: '',
+      posterUrl: '',
+      bibtex: ``
     }
   ]
 
@@ -76,7 +41,7 @@ const Publications: React.FC = () => {
 
   return (
     <div className="card">
-      <h2 className="section-title">Publication</h2>
+      <h2 className="section-title">Publications</h2>
       <div className="section-divider"></div>
       
       <p style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '1.5rem' }}>
@@ -99,7 +64,7 @@ const Publications: React.FC = () => {
                       <p className="publication-authors">{pub.authors}</p>
                       <div className="publication-links">
                         <span className="publication-badge">{pub.venue}</span>
-                        <a 
+                        {/* <a 
                           href={pub.paperUrl} 
                           target="_blank" 
                           rel="noopener noreferrer"
@@ -122,8 +87,8 @@ const Publications: React.FC = () => {
                             className="publication-link"
                           >
                             poster
-                          </a>
-                        )}
+                          </a> */}
+                        {/* )} */}
                       </div>
                       
                       {expandedBib === pub.id && (
