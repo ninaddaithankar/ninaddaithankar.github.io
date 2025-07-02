@@ -84,6 +84,7 @@ a {
 .hero-social-icon {
   color: #222;
   transition: color 0.2s;
+  margin-top: auto;
 }
 
 .fa-brands, .fa-regular {
@@ -101,31 +102,29 @@ a {
   margin-bottom: 1.5rem;
 }
 
-.hero-btn {
-  font-size: 1.1rem;
-  padding: 0.5em 1.5em;
-  border-radius: 0.5em;
-  background: #222;
-  color: #fff;
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 500;
-  border: none;
-  transition: background 0.2s, color 0.2s;
-}
-.hero-btn:hover {
-  background: #3d30f6;
-  color: #fff;
-}
-.hero-btn-outline {
-  background: transparent;
-  color: #222;
-  border: 2px solid #222;
-}
 .hero-btn-outline:hover {
   background: #3d30f6;
   color: #fff;
   border-color: #3d30f6;
+}
+
+.blog-btn-inline {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  border: 2px solid #222;
+  background: #222;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 0.5em;
+  padding: 1em;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.blog-btn-inline:hover {
+  background: #fff;
+  color: #222;
+  border-color: #222;
 }
 
 /* Header section */
@@ -162,7 +161,7 @@ a {
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .section-divider {
@@ -483,5 +482,17 @@ a {
   .section-divider {
     width: 5rem;
   }
+}
+
+.back-link {
+  color: #3d30f6;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 5vh;
+  transition: color 0.2s;
+}
+.back-link:hover {
+  color: #222;
 }
 
