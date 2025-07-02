@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import React from 'react';
+const Misc = () => {
+    return (_jsxs("div", { className: "card", children: [_jsx("h2", { className: "section-title", children: "Me" }), _jsx("div", { className: "section-divider" }), _jsxs("ul", { className: "misc-list", children: [_jsx("li", { className: "running-li", children: "Long-distance running has become my new obsession. Morning runs with the cool air feel like meditation in motion. I'm pushing for a sub-60 minute 10K. Soon, I'll be writing about how running rewires the brain." }), _jsx("li", { className: "cricket-li", children: "I grew up playing Cricket. I was a part of my school's winning U-12, U-14 interschool cricket team. I also played for eQ's Cricket Team as a batting all-rounder for 2 years during my time there." }), _jsx("li", { className: "piano-li", children: "Yiruma's \"River Flows in You\" inspired me to self learn piano during my undergrad. I also learned to play Bansuri (Indian Flute). I love listening to Indian and Western Classical Music. Favorites include Pt. Bhimsen Joshi, Pt. Hariprasad Chaurasia, Schubert, Beethoven and film scores from Hans Zimmer." })] })] }));
+};
+export default Misc;
