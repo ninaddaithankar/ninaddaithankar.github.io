@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         </p>
       </div>
       <div className="hero-social-row">
-        <a href="/resume.pdf" aria-label="Resume" className="hero-social-icon" target="_blank" rel="noopener noreferrer"><i className="fa-regular fa-file-lines"></i></a>
+        <a href="/cv.pdf" aria-label="CV" className="hero-social-icon" target="_blank" rel="noopener noreferrer"><i className="fa-regular fa-file-lines"></i></a>
         {/* <a href="#" aria-label="Scholar" className="hero-social-icon"><i className="fa-solid fa-graduation-cap"></i></a> */}
         <a href="https://github.com/ninaddaithankar" aria-label="GitHub" className="hero-social-icon" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/ninaddaithankar/" aria-label="LinkedIn" className="hero-social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
