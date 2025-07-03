@@ -14,7 +14,7 @@
 body {
   font-family: 'Newsreader', serif;
   font-weight: 350;
-  background-color: #fff6e6;
+  background-color: #fff8eb;
   color: #1f2937;
   margin: 0 auto;
   line-height: 1.4;
@@ -32,6 +32,8 @@ a {
   width: 48rem;
   margin: 0 auto;
   padding: 1rem 0rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* Card styles */
@@ -448,11 +450,11 @@ a {
 
   .fa-brands, .fa-regular{
     font-size: 1.5rem;
-    margin-bottom: 0.2rem;
+    padding-top: 0.2rem;
   }
 
   .blog-btn-inline {
-    font-size: 1rem;
+    padding-top: 0.5rem;
   }
 
   .footer p {
@@ -500,5 +502,47 @@ a {
 }
 .back-link:hover {
   color: #222;
+}
+
+.minimal-art {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  pointer-events: none;
+  user-select: none;
+}
+
+.minimal-art-landscape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 320px;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.minimal-art-landscape-side {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.minimal-art-bamboo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 320px;
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
 }
 

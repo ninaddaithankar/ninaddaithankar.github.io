@@ -10,10 +10,12 @@ import Misc from './components/Misc'
 import Footer from './components/Footer'
 import BlogList from './components/BlogList'
 import BlogDetail from './components/BlogDetail'
+import MinimalArt from './components/MinimalArt'
 
 function App() {
   return (
     <div className="container">
+      <MinimalArt />
       <Routes>
         <Route path="/" element={
           <>
