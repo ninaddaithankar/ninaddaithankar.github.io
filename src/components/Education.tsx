@@ -51,7 +51,7 @@ const Education: React.FC = () => {
                 <p className="education-extra-details">
                   Advisor:{' '}
                   {item.advisorUrl ? (
-                    <a href={item.advisorUrl} target="_blank" rel="noopener noreferrer">{item.advisor}</a>
+                    <a href={item.advisorUrl} target="_blank" rel="noopener noreferrer" style={{fontSize:"0.875rem"}}>{item.advisor}</a>
                   ) : (
                     item.advisor
                   )}

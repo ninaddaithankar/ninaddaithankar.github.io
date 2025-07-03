@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         {/* <a href="#" aria-label="Scholar" className="hero-social-icon"><i className="fa-solid fa-graduation-cap"></i></a> */}
         <a href="https://github.com/ninaddaithankar" aria-label="GitHub" className="hero-social-icon" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/ninaddaithankar/" aria-label="LinkedIn" className="hero-social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
-        <Link to="/blog" className="blog-btn-inline">thoughts<span style={{fontSize: '0.75em', marginLeft: '0.5em'}}>&#8599;</span></Link>
+        <Link to="/blog" className="blog-btn-inline">thoughts <i className="fa-solid fa-chevron-right" style={{paddingLeft:"0.5rem"}}></i></Link>
       </div>
       {/* <div className="hero-actions">
         <a href="#" className="hero-btn">Notes</a>

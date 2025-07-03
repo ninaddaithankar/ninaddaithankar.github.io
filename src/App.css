@@ -1,6 +1,8 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,200..700&display=swap');
+
 /* Reset and base styles */
 * {
   margin: 0;
@@ -12,7 +14,7 @@
 body {
   font-family: 'Newsreader', serif;
   font-weight: 350;
-  background-color: #f1f1f1;
+  background-color: #fff6e6;
   color: #1f2937;
   margin: 0 auto;
   line-height: 1.4;
@@ -83,11 +85,12 @@ a {
 .hero-social-icon {
   color: #222;
   transition: color 0.2s;
-  margin-top: auto;
+  margin: auto;
+  padding-top: 0.2rem;
 }
 
 .fa-brands, .fa-regular {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 .hero-social-icon:hover {
@@ -101,27 +104,25 @@ a {
   margin-bottom: 1.5rem;
 }
 
-.hero-btn-outline:hover {
-  background: #3d30f6;
-  color: #fff;
-  border-color: #3d30f6;
-}
+.fa-chevron-right {
+  padding-bottom: 0.1rem;
+} 
 
 .blog-btn-inline {
-  height: 2.5rem;
   display: flex;
   align-items: center;
-  border: 2px solid #222;
+  border: 0.1rem solid #222;
   background: #222;
-  color: #fff;
-  font-size: 1.1rem;
-  border-radius: 0.5em;
-  padding: 1em;
+  color: #f1f1f1;
+  font-size: 0.975rem;
+  border-radius: 0.6em;
+  padding: 0.4em 1em 0.4em  1em;
   font-weight: 500;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
+
 .blog-btn-inline:hover {
-  background: #fff;
+  background: #eceee6;
   color: #222;
   border-color: #222;
 }
@@ -274,7 +275,7 @@ a {
 .experience-title {
   font-weight: 600;
   color: #111827;
-  font-size: clamp(1rem, 2.5vw, 1.125rem); /* Responsive font size */
+  font-size: 1.125rem; /* Responsive font size */
   margin-bottom: 0.5rem;
 }
 
@@ -282,21 +283,21 @@ a {
 .experience-period {
   color: #6b7280;
   margin-bottom: 0.5rem;
-  font-size: clamp(0.8rem, 2vw, 0.875rem);
+  font-size: 0.875rem;
 }
 
 .education-details,
 .experience-details {
   color: #374151;
   margin-bottom: 0.5rem;
-  font-size: clamp(0.8rem, 2vw, 0.875rem);
+  font-size: 0.875rem;
   font-style: italic;
 }
 
 .education-extra-details {
   color: #374151;
   margin-bottom: 0.5rem;
-  font-size: clamp(0.8rem, 2vw, 0.875rem);
+  font-size: 0.875rem;
 }
 
 .institution-logo {
@@ -437,15 +438,21 @@ a {
   }
 
   .profile-image, .hero-profile-image {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
   }
+
   .section-divider {
     width: 8rem;
   }
 
-  .fa-brands, .fa-regular {
+  .fa-brands, .fa-regular{
     font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .blog-btn-inline {
+    font-size: 1rem;
   }
 
   .footer p {

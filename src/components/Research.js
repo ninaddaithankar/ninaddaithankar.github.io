@@ -1,6 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import React from 'react';
-const Research = () => {
-    return (_jsxs("div", { className: "card", children: [_jsx("h2", { className: "section-title", children: "Research Interest" }), _jsx("div", { className: "section-divider" }), _jsxs("div", { className: "text-content", children: [_jsx("p", { children: "I have a wide interest in NLP. Currently, I am focusing on the following topics:" }), _jsxs("div", { className: "research-item", children: [_jsx("strong", { children: "Knowledge in Language Models" }), _jsx("p", { children: "Given that LLMs can serve as knowledge bases, I want to explore how the knowledges are stored in LLMs. My goal is to help LLMs understand and utilize the knowledge in a better way." })] }), _jsxs("div", { className: "research-item", children: [_jsx("strong", { children: "Language Models' Explainability and Interpretability" }), _jsx("p", { children: "LLMs's behaviors are always unpredictable and unorganized, I hope to help the community understanding LLMs from an intrinsic perspective." })] }), _jsx("p", { children: "Besides, I am also quite interested in Multi-Modal Learning." })] })] }));
-};
-export default Research;

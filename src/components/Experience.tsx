@@ -65,7 +65,7 @@ const Experience: React.FC = () => {
                       href={item.advisorUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      style={{textDecoration: "none"}}
+                      style={{fontSize:"0.875rem"}}
                     >
                       {item.advisor}
                     </a>
