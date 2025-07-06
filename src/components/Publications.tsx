@@ -18,7 +18,7 @@ const Publications: React.FC = () => {
       id: 'tdv2025',
       title: 'Is there an Optimal Set of Assumptions for Training Visual Encoders?',
       authors: '[Manuscript in Preparation] Ninad Daithankar†, Alexi Gladstone†, Heng Ji',
-      venue: 'ICML 2026',
+      venue: 'ICLR 2026',
       year: '2025',
       paperUrl: '',
       posterUrl: '',

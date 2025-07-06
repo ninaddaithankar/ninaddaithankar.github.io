@@ -12,10 +12,11 @@ const Header: React.FC = () => {
       <h1 className="hero-title">Hey, I'm Ninad.</h1>
       <div className="hero-about">
         <p>
-          I'm a researcher currently working on self-supervised learning, particularly visual representation learning.
+          I'm a researcher and engineer exploring cognitively inspired foundation models to learn efficient and meaningful representations from video data.
+          {/* I'm a researcher currently working on self-supervised learning, particularly visual representation learning. */}
         </p>
         <p>
-          I'm pursuing my Masters in CS at UIUC, where I do research at the  <a href="https://blender.cs.illinois.edu/people/" target="_blank" rel="noopener noreferrer">Blender Lab</a> advised by  <a href="https://blender.cs.illinois.edu/hengji.html" target="_blank" rel="noopener noreferrer">Prof. Heng Ji</a>.
+          I'm pursuing my Masters in CS at UIUC, where I also work with the  <a href="https://blender.cs.illinois.edu/people/" target="_blank" rel="noopener noreferrer">Blender Lab</a> advised by  <a href="https://blender.cs.illinois.edu/hengji.html" target="_blank" rel="noopener noreferrer">Prof. Heng Ji</a>.
           Previously, I worked on the Data Virtualization team at <a href="https://1eq.com" target="_blank" rel="noopener noreferrer">eQ</a> where I built lots of connectors for large-scale data integration.
         </p>
         <p>

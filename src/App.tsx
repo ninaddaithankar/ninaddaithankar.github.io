@@ -10,30 +10,32 @@ import Misc from './components/Misc'
 import Footer from './components/Footer'
 import BlogList from './components/BlogList'
 import BlogDetail from './components/BlogDetail'
-import MinimalArt from './components/MinimalArt'
+// import MinimalArt from './components/MinimalArt'
 
 function App() {
   return (
-    <div className="container">
-      <MinimalArt />
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Header />
-            {/* <About /> */}
-            {/* <Research /> */}
-            <Experience />
-            <Publications />
-            <Education />
-            {/* <Awards /> */}
-            <Misc />
-            <Footer />
-          </>
-        } />
-        <Route path="/blog" element={<BlogList />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
-      </Routes>
-    </div>
+    <>
+      {/* <MinimalArt /> */}
+      <div className="container">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Header />
+              {/* <About /> */}
+              {/* <Research /> */}
+              <Experience />
+              <Publications />
+              <Education />
+              {/* <Awards /> */}
+              <Misc />
+              <Footer />
+            </>
+          } />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+        </Routes>
+      </div>
+    </>
   )
 }
 

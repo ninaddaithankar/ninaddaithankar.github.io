@@ -16,7 +16,8 @@ body {
   font-weight: 350;
   background-color: #fff8eb;
   color: #1f2937;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   line-height: 1.4;
   word-spacing: 0.1em;
   text-wrap: justify;
@@ -29,9 +30,10 @@ a {
 
 /* Container */
 .container {
-  width: 48rem;
+  width: 100vw;
+  max-width: 48rem;
   margin: 0 auto;
-  padding: 1rem 0rem;
+  padding: 0;
   position: relative;
   z-index: 1;
 }
@@ -48,6 +50,7 @@ a {
   align-items: flex-start;
   margin-top: 10vh;
   margin-bottom: 3rem;
+  position: relative;
 }
 
 .hero-profile-image {
@@ -544,5 +547,28 @@ a {
   z-index: 10;
   pointer-events: none;
   user-select: none;
+}
+
+.minimal-art-enso {
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 100 / 18.33;
+  display: block;
+}
+
+.main-bg-art-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 100 / 18.33;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-header {
+  position: relative;
 }
 
