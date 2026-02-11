@@ -14,9 +14,9 @@ interface ExperienceItem {
 const Experience: React.FC = () => {
   const experienceItems: ExperienceItem[] = [
     {
-      title: 'Summer Research Intern',
+      title: 'Research Intern - Video Understanding',
       institution: 'Blender Lab - University of Illinois Urbana-Champaign',
-      period: '05/2025 - Present',
+      period: '05/2025 - 12/2025',
       advisor: 'Prof. Heng Ji',
       advisorUrl: 'https://blender.cs.illinois.edu/hengji.html',
       topic: 'Temporal Difference Encoders',
@@ -26,7 +26,7 @@ const Experience: React.FC = () => {
     {
       title: 'Graduate Student Researcher',
       institution: 'Blender Lab - University of Illinois Urbana-Champaign',
-      period: '09/2024 - Present',
+      period: '09/2024 - 05/2025',
       advisor: 'Prof. Heng Ji',
       advisorUrl: 'https://blender.cs.illinois.edu/hengji.html',
       topic: 'SSL - Visual Representation Learning',
