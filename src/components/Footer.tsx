@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         Last updated: {LAST_UPDATED}
       </p>
       <p>
-        Made with love, heart and cursor! ♥️
+        Designed by me, (mostly) made by Cursor! ♥️
       </p>
       <p> © 2026 Ninad Daithankar</p>
     </div>
