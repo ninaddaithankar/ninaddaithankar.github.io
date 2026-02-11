@@ -15,7 +15,7 @@ const Misc: React.FC = () => {
         </li>
         <li className="piano-li">
           Yiruma's "River Flows in You" inspired me to self learn piano during my undergrad. I also learned to play Bansuri (Indian Flute). I love listening to Indian and Western Classical Music. Favorites include 
-          <a href="https://youtu.be/dmfMXOz_RYo?si=GOXk-_gNHf6BOpYS" target="_blank" rel="noopener noreferrer">Pt. Bhimsen Joshi</a>, 
+          <a href="https://youtu.be/dmfMXOz_RYo?si=GOXk-_gNHf6BOpYS" target="_blank" rel="noopener noreferrer"> Pt. Bhimsen Joshi</a>, 
           <a href="https://youtu.be/wkwuXy7CbYU?si=LGm_csj792n9MZtg" target="_blank" rel="noopener noreferrer"> Pt. Hariprasad Chaurasia</a>,
           <a href="https://youtu.be/QqVscSR5Oe0?si=BhvtFZ6BWirsGOh5" target="_blank" rel="noopener noreferrer"> Schubert</a>, 
           <a href="https://youtu.be/vGq3-Fi_zQY?si=gyzXm4FE1AH2xDpf" target="_blank" rel="noopener noreferrer"> Beethoven</a>,
