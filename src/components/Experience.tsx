@@ -26,7 +26,7 @@ const Experience: React.FC = () => {
     {
       title: 'Graduate Student Researcher',
       institution: 'Blender Lab - University of Illinois Urbana-Champaign',
-      period: '09/2025 - Present',
+      period: '09/2024 - Present',
       advisor: 'Prof. Heng Ji',
       advisorUrl: 'https://blender.cs.illinois.edu/hengji.html',
       topic: 'SSL - Visual Representation Learning',

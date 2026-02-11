@@ -14,7 +14,7 @@
 body {
   font-family: 'Newsreader', serif;
   font-weight: 350;
-  background-color: rgb(229, 229, 218);
+  background-color: rgb(255, 255, 251);
   color: #1f2937;
   margin: 0;
   padding: 0;
@@ -59,12 +59,12 @@ a {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 2rem;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.116);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .hero-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: left;
   margin-bottom: 1rem;
@@ -94,7 +94,7 @@ a {
   padding-top: 0.2rem;
 }
 
-.fa-brands, .fa-regular {
+.fa-brands, .fa-regular, .fa-wand-magic-sparkles {
   font-size: 1.9rem;
 }
 
