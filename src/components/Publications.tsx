@@ -16,10 +16,10 @@ const Publications: React.FC = () => {
   const publications: Publication[] = [
     {
       id: 'tdv2025',
-      title: 'Is there an Optimal Set of Assumptions for Training Visual Encoders?',
+      title: 'Temporal Difference Enables Self-Supervised Learning Without Strong Assumptions',
       authors: '[Manuscript in Preparation] Ninad Daithankar†, Alexi Gladstone†, Heng Ji',
-      venue: 'ICLR 2026',
-      year: '2025',
+      venue: 'arXiv',
+      year: '2026',
       paperUrl: '',
       posterUrl: '',
       bibtex: ``
