@@ -2,13 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-
-const blogMeta = [
-  {
-    id: 'how-running-changed-me',
-    title: 'How Running Changed Me',
-  },
-]
+import { blogs } from '../data/blogs'
+import Footer from './Footer'
 
 const BlogDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>()
@@ -16,7 +11,7 @@ const BlogDetail: React.FC = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  const meta = blogMeta.find(b => b.id === id)
+  const blog = id ? blogs.find(b => b.id === id) : null
 
   useEffect(() => {
     if (!id) return
@@ -36,17 +31,22 @@ const BlogDetail: React.FC = () => {
       })
   }, [id])
 
-  if (!meta) return <div className="text-content">Blog not found.</div>
+  if (!blog) return <div className="text-content">Blog not found.</div>
 
   return (
-    <div>
+    <div style={{ paddingBottom: '3rem' }}>
       <Link to="/blog" className="back-link">&larr; Back to Blog</Link>
-      <h2 className="section-title" style={{marginTop: '4rem'}}>{meta.title}</h2>
+      <h2 className="section-title" style={{marginTop: '4rem'}}>{blog.title}</h2>
+      <div className="blog-date" style={{fontSize: '0.875rem', color: '#6b7280', marginBottom: '1rem'}}>{blog.date}</div>
       <div className="section-divider" style={{marginBottom: '2rem'}}/>
-      <div className="text-content" style={{marginTop: '1.5rem'}}>
+      <div className="text-content blog-content" style={{marginTop: '1.5rem'}}>
         {loading && 'Loading...'}
         {error && error}
         {!loading && !error && <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>}
+      </div>
+
+      <div style={{ marginTop: '4rem' }}>
+        <Footer />
       </div>
     </div>
   )
