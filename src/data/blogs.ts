@@ -35,7 +35,7 @@ export const blogs: Blog[] = [
     date: 'Jan 15, 2025',
     summary: 'My experience as a beginner runner and a beginner weightlifter.',
     category: 'experiences',
-    visible: true
+    visible: false
   },
   {
     id: 'how-i-got-into-research',
