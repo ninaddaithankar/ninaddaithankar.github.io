@@ -46,9 +46,17 @@ export const blogs: Blog[] = [
     visible: false
   },
   {
+    id: 'energy-based-models-blog',
+    title: 'History Of Using Energy Minimization For Learning',
+    date: 'Feb 24, 2026',
+    summary: '[20 min read] A grad-student-friendly recap tracing the lineage from Hopfield Networks to RBMs and Predictive Coding, while drawing parallels with biological configurations of the brain.',
+    category: 'ai',
+    visible: true
+  },
+  {
     id: 'ai-agi-asi',
     title: 'AI, AGI, and ASI',
-    date: 'Feb 10, 2025',
+    date: 'Feb 10, 2026',
     summary: '[2 min read] These terms are thrown around very loosely. I wrote this to share with my non-AI friends and family.',
     category: 'ai',
     visible: true
