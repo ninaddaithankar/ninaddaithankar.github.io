@@ -47,7 +47,7 @@ export const blogs: Blog[] = [
   },
   {
     id: 'energy-based-models-blog',
-    title: 'History Of Using Energy Minimization For Learning',
+    title: 'Energy Minimization For Artificial Learning',
     date: 'Feb 24, 2026',
     summary: '[20 min read] A grad-student-friendly recap tracing the lineage from Hopfield Networks to RBMs and Predictive Coding, while drawing parallels with biological configurations of the brain.',
     category: 'ai',
