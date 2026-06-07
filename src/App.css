@@ -491,6 +491,9 @@ a {
   html {
     font-size: 14px;
   }
+  * {
+    font-size: 14px;
+  }
   body {
     min-width: unset;
   }

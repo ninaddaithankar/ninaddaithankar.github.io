@@ -15,7 +15,7 @@ const BlogList: React.FC = () => {
   }, {} as Record<CategoryKey, Blog[]>)
 
   // Define the order of sections
-  const categoryOrder: CategoryKey[] = ['ai', 'experiences', 'recommendations']
+  const categoryOrder: CategoryKey[] = ['ai']
 
   return (
     <div style={{ paddingBottom: '3rem' }}>

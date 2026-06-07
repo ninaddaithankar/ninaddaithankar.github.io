@@ -39,14 +39,13 @@ const News: React.FC = () => {
                 flexShrink: 0,
                 width: '7rem',
                 color: '#333536',
-                fontSize: '1rem',
                 fontWeight: 700,
                 paddingTop: '0.05em',
               }}
             >
               {item.date}
             </span>
-            <span style={{ color: '#374151', fontSize: '1rem', lineHeight: 1.6 }}>
+            <span style={{ color: '#374151', lineHeight: 1.6 }}>
               {item.content}
             </span>
           </li>
