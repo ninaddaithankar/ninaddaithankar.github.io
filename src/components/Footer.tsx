@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LAST_UPDATED = 'February 10, 2026'
+const LAST_UPDATED = 'June 06, 2026'
 
 const Footer: React.FC = () => {
   return (

@@ -7,6 +7,7 @@ import Publications from './components/Publications'
 import Education from './components/Education'
 import Experience from './components/Experience'
 // import Awards from './components/Awards'
+import News from './components/News'
 import Misc from './components/Misc'
 import Footer from './components/Footer'
 import BlogList from './components/BlogList'
@@ -24,10 +25,11 @@ function App() {
           <Route path="/" element={
             <>
               <Header />
+              <News />
+              <Publications />
               {/* <About /> */}
               {/* <Research /> */}
               <Experience />
-              <Publications />
               <Education />
               {/* <Awards /> */}
               <Misc />

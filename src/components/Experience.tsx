@@ -1,11 +1,15 @@
 import React from 'react'
 
+interface Advisor {
+  name: string
+  url?: string
+}
+
 interface ExperienceItem {
   title: string
   institution: string
   period: string
-  advisor?: string
-  advisorUrl?: string
+  advisors?: Advisor[]
   topic: string
   logo: string
   logoAlt: string
@@ -14,22 +18,14 @@ interface ExperienceItem {
 const Experience: React.FC = () => {
   const experienceItems: ExperienceItem[] = [
     {
-      title: 'Research Intern - Video Understanding',
+      title: 'Researcher - Video Understanding',
       institution: 'Blender Lab - University of Illinois Urbana-Champaign',
-      period: '05/2025 - 12/2025',
-      advisor: 'Prof. Heng Ji',
-      advisorUrl: 'https://blender.cs.illinois.edu/hengji.html',
+      period: '09/2024 - 12/2025',
+      advisors: [
+        { name: 'Alexi Gladstone', url: 'https://alexiglad.github.io' },
+        { name: 'Prof. Heng Ji', url: 'https://blender.cs.illinois.edu/hengji.html' },
+      ],
       topic: 'Temporal Difference Encoders',
-      logo: '/assets/uiuc.png',
-      logoAlt: 'UIUC Logo'
-    },
-    {
-      title: 'Graduate Student Researcher',
-      institution: 'Blender Lab - University of Illinois Urbana-Champaign',
-      period: '09/2024 - 05/2025',
-      advisor: 'Prof. Heng Ji',
-      advisorUrl: 'https://blender.cs.illinois.edu/hengji.html',
-      topic: 'SSL - Visual Representation Learning',
       logo: '/assets/uiuc.png',
       logoAlt: 'UIUC Logo'
     },
@@ -37,7 +33,7 @@ const Experience: React.FC = () => {
       title: 'Software Engineer - Data Virtualization',
       institution: 'eQ Technologic',
       period: '08/2021 - 07/2024',
-      topic: 'SSL - Visual Representation Learning',
+      topic: '',
       logo: '/assets/eq-logo.webp',
       logoAlt: 'eQ Logo'
     }
@@ -57,21 +53,21 @@ const Experience: React.FC = () => {
               </h3>
               <p className='experience-period'>{item.institution}</p>
               <p className="experience-period">{item.period}</p>
-              {item.advisor && item.advisor.trim() !== "" && (
+              {item.advisors && item.advisors.length > 0 && (
                 <p className="education-extra-details">
-                  Advisor:{' '}
-                  {item.advisorUrl ? (
-                    <a 
-                      href={item.advisorUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      style={{fontSize:"0.875rem"}}
-                    >
-                      {item.advisor}
-                    </a>
-                  ) : (
-                    item.advisor
-                  )}
+                  Advisors:{' '}
+                  {item.advisors.map((a, i) => (
+                    <span key={a.name}>
+                      {a.url ? (
+                        <a href={a.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem' }}>
+                          {a.name}
+                        </a>
+                      ) : (
+                        a.name
+                      )}
+                      {i < item.advisors!.length - 1 ? ', ' : ''}
+                    </span>
+                  ))}
                 </p>
               )}
               {/* <p className="experience-details">

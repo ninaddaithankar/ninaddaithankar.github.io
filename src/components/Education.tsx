@@ -15,13 +15,11 @@ const Education: React.FC = () => {
   const educationItems: EducationItem[] = [
     {
       institution: 'University of Illinois Urbana-Champaign',
-      period: '2024 - ongoing',
-      degree: 'Masters - Computer Science, GPA - 3.91/4',
+      period: '2024 - 2025',
+      degree: 'Masters - Computer Science, GPA - 3.87/4',
       details: ['Coursework: Advances in Cognitive Science, Deep Learning for Computer Vision, Natural Language Processing, Deep Generative Models, Advanced Information Retrieval, Computational Photography'],
       logo: '/assets/uiuc.png',
       logoAlt: 'UIUC Logo',
-      advisor: 'Prof. Heng Ji',
-      advisorUrl: 'https://blender.cs.illinois.edu/hengji.html'
     },
     {
       institution: 'Savitribai Phule Pune University',
