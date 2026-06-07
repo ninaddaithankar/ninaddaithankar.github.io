@@ -55,12 +55,12 @@ a {
 }
 
 .hero-profile-image {
-  width: 10rem;
-  height: 10rem;
+  width: 14rem;
+  height: 14rem;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 2rem;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.10);
 }
 
 .hero-title {
@@ -491,8 +491,8 @@ a {
     font-size: 2rem;
   }
   .profile-image, .hero-profile-image {
-    width: 8rem;
-    height: 8rem;
+    width: 12rem;
+    height: 12rem;
   }
 
   .blog-content {
@@ -529,8 +529,8 @@ a {
   }
 
   .profile-image, .hero-profile-image {
-    width: 7rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
   }
 
   .section-divider {
@@ -577,8 +577,8 @@ a {
     font-size: 1rem;
   }
   .profile-image, .hero-profile-image {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 7rem;
+    height: 7rem;
   }
   .section-divider {
     width: 5rem;

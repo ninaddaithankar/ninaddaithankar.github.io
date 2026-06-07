@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { useVisitorTracking } from './hooks/useVisitorTracking'
 import Header from './components/Header'
 // import About from './components/About'
 // import Research from './components/Research'
@@ -13,6 +14,8 @@ import BlogDetail from './components/BlogDetail'
 // import MinimalArt from './components/MinimalArt'
 
 function App() {
+  useVisitorTracking()
+
   return (
     <>
       {/* <MinimalArt /> */}

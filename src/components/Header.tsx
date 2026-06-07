@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header className="hero-header">
       <img 
-        src="/assets/me/trump-tower.jpeg" 
+        src="/assets/me/foellinger-vignette.jpg" 
         alt="Ninad Daithankar" 
         className="hero-profile-image"
       />

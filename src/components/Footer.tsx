@@ -8,9 +8,6 @@ const Footer: React.FC = () => {
       <p className="last-updated">
         Last updated: {LAST_UPDATED}
       </p>
-      <p>
-        Designed by me, (mostly) made by Cursor! ♥️
-      </p>
       <p> © 2026 Ninad Daithankar</p>
     </div>
   )
