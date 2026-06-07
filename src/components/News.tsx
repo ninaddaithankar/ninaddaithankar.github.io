@@ -11,9 +11,9 @@ const News: React.FC = () => {
       date: 'Jun 2026',
       content: (
         <>
-          My master's research is out!{' '}
+          My master's work is out!{' '}
           <a href="https://temporal-difference-vision.github.io/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>TDV</a>
-          {' '}challenges the conventional wisdom in self-supervised vision — what if raw video was all the supervision you ever needed? [Under review at <strong>NeurIPS 2026</strong>]
+          {' '} learns visual representations without augmentations or masking using a single idea: the past predicts the future. [Under review at <strong>NeurIPS 2026</strong>]
         </>
       ),
     },
@@ -21,7 +21,7 @@ const News: React.FC = () => {
 
   return (
     <div className="card">
-      <h2 className="blog-category" style={{ marginTop: 0 }}>News</h2>
+      <h2 className="blog-category" style={{ marginTop: 0, fontSize: '1.5rem' }}>News</h2>
 
       <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
         {items.map((item, i) => (

@@ -66,7 +66,7 @@ a {
 
 .hero-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: left;
   margin-bottom: 1rem;
@@ -97,7 +97,7 @@ a {
 }
 
 .fa-brands, .fa-regular, .fa-wand-magic-sparkles {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 
 .hero-social-icon:hover {
@@ -121,9 +121,9 @@ a {
   border: 0.1rem solid #222;
   background: #222;
   color: #f1f1f1;
-  font-size: 0.975rem;
+  font-size: 0.9rem;
   border-radius: 0.6em;
-  padding: 0.4em 1em 0.4em  1em;
+  padding: 0.35em 0.95em;
   font-weight: 500;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
@@ -168,7 +168,7 @@ a {
   font-weight: 700;
   color: #111827;
   margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .section-divider {
@@ -506,8 +506,11 @@ a {
     margin-top: 10vh;
   }
 
-  .hero-title, .section-title {
+  .hero-title {
     font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.25rem;
   }
   .profile-image, .hero-profile-image {
     width: 12rem;
@@ -620,7 +623,7 @@ a {
 .blog-category {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #111827;
   display: inline-block;
   padding: 0 0.4em;

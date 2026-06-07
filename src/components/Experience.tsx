@@ -20,7 +20,7 @@ const Experience: React.FC = () => {
     {
       title: 'Researcher - Video Understanding',
       institution: 'Blender Lab - University of Illinois Urbana-Champaign',
-      period: '09/2024 - 12/2025',
+      period: '09/2024 - ongoing',
       advisors: [
         { name: 'Alexi Gladstone', url: 'https://alexiglad.github.io' },
         { name: 'Prof. Heng Ji', url: 'https://blender.cs.illinois.edu/hengji.html' },
