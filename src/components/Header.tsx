@@ -12,14 +12,17 @@ const Header: React.FC = () => {
       <h1 className="hero-title">Hey, I'm Ninad.</h1>
       <div className="hero-about">
         <p>
-          I'm a researcher and engineer working on foundation models for video understanding.
+          I'm a researcher and engineer working on foundational AI architectures. 
         </p>
         <p>
-          I'm pursuing my Masters in CS at UIUC, where I also work with the  <a href="https://blender.cs.illinois.edu/people/" target="_blank" rel="noopener noreferrer">Blender Lab</a> advised by  <a href="https://blender.cs.illinois.edu/hengji.html" target="_blank" rel="noopener noreferrer">Prof. Heng Ji</a>.
+          I completed my Masters in CS at UIUC, and I'm currently working with the  <a href="https://blender.cs.illinois.edu/people/" target="_blank" rel="noopener noreferrer">Blender Lab</a> advised by  <a href="https://blender.cs.illinois.edu/hengji.html" target="_blank" rel="noopener noreferrer">Prof. Heng Ji</a>.
           Previously, I worked on the Data Virtualization team at <a href="https://1eq.com" target="_blank" rel="noopener noreferrer">eQ</a> where I built lots of connectors for large-scale data integration.
         </p>
+        <p style={{ color: '#f74444', fontWeight: 500, fontFamily: "'Consolas', 'JetBrains Mono', monospace", fontSize:"0.9rem" }}>
+          I'm on the job market! If you know a role I might be a good fit for, hit me up! :)
+        </p>
         <p>
-          I'm extremely curious about what makes us intelligent, and how we could replicate it. In general, I'm interested in world models, cognitive neuroscience & psychology. 
+          I'm extremely curious about what makes us intelligent, and how we could replicate it. In general, I'm interested in world models, continual learning, neuroscience & psychology. 
         </p>
         <p>
           Reach me at <a href="mailto:ninadd2@illinois.edu">ninadd2 [at] illinois [dot] edu</a>.

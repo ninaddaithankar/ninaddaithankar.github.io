@@ -580,6 +580,15 @@ a {
   .blog-content {
     padding-inline: 0;
   }
+
+  .publication-title {
+    font-size: 1rem;
+  }
+
+  .publication-authors {
+    font-size: 0.875rem;
+  }
+
 }
 
 /* iPhone SE/5/6/7/8, 375px and below */

@@ -11,6 +11,7 @@ interface Publication {
   posterUrl?: string
   websiteUrl?: string
   codeUrl?: string
+  gifUrl?: string
 }
 
 const Publications: React.FC = () => {
@@ -26,7 +27,8 @@ const Publications: React.FC = () => {
       posterUrl: '',
       bibtex: ``,
       websiteUrl: 'https://temporal-difference-vision.github.io/',
-      codeUrl: 'https://github.com/ninaddaithankar/tdv'
+      codeUrl: 'https://github.com/ninaddaithankar/tdv',
+      gifUrl: '/assets/tdv-intuition.gif'
     }
   ]
 
@@ -55,39 +57,25 @@ const Publications: React.FC = () => {
                 {pubs.map((pub) => (
                   <div key={pub.id} className="publication">
                     <div>
+                      {pub.gifUrl && (
+                        <img
+                          src={pub.gifUrl}
+                          alt={`${pub.title} intuition`}
+                          style={{ width: '40%', borderRadius: '0.375rem', marginBottom: '0.75rem' }}
+                        />
+                      )}
                       <h4 className="publication-title">{pub.title}</h4>
                       <p className="publication-authors">{pub.authors}</p>
                       <div className="publication-links">
                         <span className="publication-badge">{pub.venue}</span>
                         {pub.paperUrl && (
-                          <a
-                            href={pub.paperUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="publication-link"
-                          >
-                            paper
-                          </a>
+                          <a href={pub.paperUrl} target="_blank" rel="noopener noreferrer" className="publication-link">paper</a>
                         )}
                         {pub.websiteUrl && (
-                          <a
-                            href={pub.websiteUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="publication-link"
-                          >
-                            website
-                          </a>
+                          <a href={pub.websiteUrl} target="_blank" rel="noopener noreferrer" className="publication-link">website</a>
                         )}
                         {pub.codeUrl && (
-                          <a
-                            href={pub.codeUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="publication-link"
-                          >
-                            code
-                          </a>
+                          <a href={pub.codeUrl} target="_blank" rel="noopener noreferrer" className="publication-link">code</a>
                         )}
                       </div>
                     </div>

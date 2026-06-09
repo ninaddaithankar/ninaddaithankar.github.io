@@ -8,7 +8,7 @@ const Misc: React.FC = () => {
       
       <ul className="misc-list">
         <li className="running-li">
-          Recently, I got into long distance running. It feels like meditation in motion (after your body gets used to running, of course). Currently, I'm training for a sub-60 minute 10K. I'd love to run a marathon some day! 
+          Recently, I got into long distance running. It feels like meditation in motion (after your body gets used to running, of course). I'm training for a sub-60 minute 10K <span style={{ fontFamily: "'Consolas', 'JetBrains Mono', monospace", fontSize: '0.9em', color: '#949494' }}>(current PR: 68 mins)</span>. I'd love to run a marathon some day! 
         </li>
         <li className="cricket-li">
           I grew up playing Cricket. I was a part of my school's winning U-12, U-14 interschool cricket team. I also played for eQ's Cricket Team as a batting all-rounder for 2 years during my time there.
