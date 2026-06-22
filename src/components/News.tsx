@@ -13,7 +13,7 @@ const News: React.FC = () => {
         <>
           My master's work is out!{' '}
           <a href="https://temporal-difference-vision.github.io/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'JetBrains Mono', monospace" }}>TDV</a>
-          {' '} learns visual representations without augmentations or masking using a single idea: the past predicts the future. [Under review at <strong>NeurIPS 2026</strong>]
+          {' '} learns visual representations without augmentations or masking using a single idea: the past predicts the future.
         </>
       ),
     },

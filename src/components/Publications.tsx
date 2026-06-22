@@ -21,7 +21,7 @@ const Publications: React.FC = () => {
       id: 'tdv2025',
       title: "You Don't Need Strong Assumptions: Visual Representation Learning via Temporal Differences",
       authors: 'Ninad Daithankar*, Alexi Gladstone*, Yann LeCun, Heng Ji',
-      venue: 'NeurIPS 2026 (in review)',
+      venue: 'arXiv',
       year: '2026',
       paperUrl: 'https://temporal-difference-vision.github.io/static/pdfs/tdv.pdf',
       posterUrl: '',
