@@ -15,14 +15,15 @@ const Header: React.FC = () => {
           I'm a researcher and engineer working on foundational AI architectures. 
         </p>
         <p>
-          I completed my Masters in CS at UIUC, and I'm currently working with the  <a href="https://blender.cs.illinois.edu/people/" target="_blank" rel="noopener noreferrer">Blender Lab</a> advised by  <a href="https://blender.cs.illinois.edu/hengji.html" target="_blank" rel="noopener noreferrer">Prof. Heng Ji</a>.
-          Previously, I worked on the Data Virtualization team at <a href="https://1eq.com" target="_blank" rel="noopener noreferrer">eQ</a> where I built lots of connectors for large-scale data integration.
+          I work with the Natural Intelligence group at <a href="https://machindustries.com/" target="_blank" rel="noopener noreferrer">Mach</a> on brain inspired AI.
+          Previously, I completed my Masters in CS at UIUC, where I worked with <a href="https://alexiglad.github.io/" target="_blank" rel="noopener noreferrer">Alexi</a> at the <a href="https://blender.cs.illinois.edu/people/" target="_blank" rel="noopener noreferrer">Blender Lab</a>.
+          Before that, I worked on the Data Virtualization team at <a href="https://www.1eq.com/" target="_blank" rel="noopener noreferrer">eQ</a> where I built lots of connectors for large-scale data integration.
         </p>
         <p>
           I'm extremely curious about what makes us intelligent, and how we could replicate it. In general, I'm interested in world models, continual learning, neuroscience & psychology. 
         </p>
         <p>
-          Reach me at <a href="mailto:ninadd2@illinois.edu">ninadd2 [at] illinois [dot] edu</a>.
+          Reach me at <a href="mailto:ninaddaithankar@gmail.com">ninaddaithankar [at] gmail [dot] com</a>.
         </p>
       </div>
       <div className="hero-social-row">
