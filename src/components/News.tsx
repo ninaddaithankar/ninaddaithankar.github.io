@@ -8,6 +8,16 @@ interface NewsItem {
 const News: React.FC = () => {
   const items: NewsItem[] = [
     {
+      date: 'Sep 2026',
+      content: (
+        <>
+          I'm moving to SF! I'll be joining the Natural Intelligence team at{' '}
+          <a href="https://machindustries.com/" target="_blank" rel="noopener noreferrer">Mach</a>
+          {' '} to work on brain inspired ai, local learning, continual learning and energy based models!
+        </>
+      ),
+    },
+    {
       date: 'Jun 2026',
       content: (
         <>
