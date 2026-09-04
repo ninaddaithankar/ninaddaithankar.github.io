@@ -13,7 +13,7 @@ const News: React.FC = () => {
         <>
           I'm moving to SF! I'll be joining the Natural Intelligence team at{' '}
           <a href="https://machindustries.com/" target="_blank" rel="noopener noreferrer">Mach</a>
-          {' '} to work on brain inspired ai, local learning, continual learning and energy based models!
+          {' '} to work on brain inspired AI, local learning, continual learning and energy based models!
         </>
       ),
     },
