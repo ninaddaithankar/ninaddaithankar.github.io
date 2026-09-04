@@ -8,7 +8,7 @@ interface NewsItem {
 const News: React.FC = () => {
   const items: NewsItem[] = [
     {
-      date: 'Sep 2026',
+      date: 'Aug 2026',
       content: (
         <>
           I'm moving to SF! I'll be joining the Natural Intelligence team at{' '}
